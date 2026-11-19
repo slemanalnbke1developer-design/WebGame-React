@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=3840&q=80);
+  --color: #;
+}
+.bg-mode-dark {
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), var(--background-image);
+  background-size: cover;
+  min-height: 100vh;
+}
+.bg-mode-light {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.25)), var(--background-image);
+  background-size: cover;
+  min-height: 100vh;
+}
+.light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: #000 !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  color: #fff !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.border-navbar {
+  border-bottom: 6px solid var(--color);
+  border-radius: 10px;
+}
+.mode-light {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+}
+.mode-light::placeholder {
+  color: #fff !important;
+}
+.mode-dark {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  color: #000 !important;
+}
+.mode-dark::placeholder {
+  color: #000 !important;
+}
+.Logo {
+  margin-left: 10px;
+  width: 50px;
+  border-radius: 50%;
+}
+.btn-Nav {
+  margin-right: 10px;
+  background-color: var(--color) !important;
+  border-radius: 5px;
+  padding: 2px 12px 7px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.btn-style {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  background-color: var(--color) !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  padding: 2px 12px 7px !important;
+  font-size: 18px;
+  text-decoration: none;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.border-color {
+  border: 2px solid var(--color);
+  border-radius: 12px;
+}
+.Line {
+  color: var(--color) !important;
+  border-bottom: 2px solid var(--color);
+}
+.form-check-label {
+  margin-bottom: 2px;
+}
+.light .btn-Nav,
+.light .btn-style {
+  color: #fff !important;
+}
+.dark .btn-Nav,
+.dark .btn-style {
+  color: #000 !important;
+}
+.fs-12 {
+  font-size: 12px;
+}
